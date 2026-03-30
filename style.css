@@ -275,10 +275,10 @@ a { color: inherit; text-decoration: none; }
 
 .nav-logo {
   font-family: Arial, sans-serif;
-  font-size: 1.25rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 500;
   color: #ffffff;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.02em;
   text-align: center;
   padding-bottom: 2rem;
   margin-bottom: 1rem;
