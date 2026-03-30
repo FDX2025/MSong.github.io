@@ -1,0 +1,675 @@
+---
+title: "Academic Personal Website Brief for Vibe Coding"
+author: "Prepared for Song Menglin"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    theme: null
+    self_contained: true
+---
+
+# Project Goal
+
+This `.Rmd` is a design and implementation brief for building a **high-end academic personal website** with **strong interaction**, using **HTML/CSS/JavaScript** in a vibe-coding workflow.
+
+The website should feel:
+
+- premium
+- minimal
+- research-oriented
+- interactive but restrained
+- suitable for GitHub Pages deployment
+
+The design language should reflect a **Cambridge/UCL research profile**, rather than a commercial portfolio or a generic CV page.
+
+---
+
+# Core Positioning
+
+The website is for an academic researcher with the following profile:
+
+- PhD student at **University of Cambridge and UCL**
+- Master’s degree in **Integrated Circuit Design** at **The Hong Kong University of Science and Technology**
+- Research interests in:
+  - Photonic System Design
+  - Machine Learning
+  - Advanced Algorithms for Optimal Design
+
+The site should communicate:
+
+1. strong academic identity
+2. clean research narrative
+3. visual maturity
+4. polished interactive experience
+
+---
+
+# Navigation Strategy
+
+Do **not** make the navigation too crowded.
+
+Use a compact navigation with only the following items:
+
+- Home
+- Profile
+- Research
+- Publications
+- News
+- Experience
+- Contact
+
+## Notes
+
+- **Profile** should combine:
+  - About Me
+  - Education
+  - Honors / selected achievements
+- Avoid separate navbar items for:
+  - Education
+  - About Me
+  - Awards
+
+This keeps the top navigation elegant and concise.
+
+---
+
+# Overall Information Architecture
+
+## 1. Home
+Hero section with name, identity, short statement, and quick access buttons.
+
+## 2. Profile
+A combined section for:
+- short biography
+- education timeline
+- selected honors / awards
+
+## 3. Research
+Interactive cards for major research interests.
+
+## 4. Publications
+Publication cards + patent highlight + document access.
+
+## 5. News
+Academic timeline of recent milestones.
+
+## 6. Experience
+Professional experience and invited talks.
+
+## 7. Contact
+Email, links, downloadable materials, footer.
+
+---
+
+# Visual Style Direction
+
+## Design Keywords
+
+- dark academic
+- premium minimalism
+- soft futuristic feel
+- layered depth
+- elegant motion
+- restrained glow
+- sharp typography hierarchy
+
+## Design Principle
+
+The site should feel **calm and intelligent**, not flashy.
+
+Interaction should support the academic content rather than overpower it.
+
+Avoid:
+
+- overcrowded sections
+- too many colors at once
+- exaggerated 3D effects
+- overly playful animations
+- noisy icon usage
+
+---
+
+# Color System
+
+Use the following palette as the core visual system.
+
+## CSS Variables
+
+```css
+:root {
+  --dark-amethyst: #231942ff;
+  --dusty-grape: #5e548eff;
+  --amethyst-smoke: #9f86c0ff;
+  --lilac: #be95c4ff;
+}
+```
+
+## Recommended Usage
+
+### `--dark-amethyst`
+Use for:
+- main background
+- hero background
+- footer base
+- deep section surfaces
+
+### `--dusty-grape`
+Use for:
+- card borders
+- navigation hover states
+- subheadings
+- thin dividers
+
+### `--amethyst-smoke`
+Use for:
+- buttons
+- highlighted text
+- timeline nodes
+- tags / chips
+- small accent surfaces
+
+### `--lilac`
+Use for:
+- hover glow
+- active highlight
+- soft shadow tint
+- refined gradient edges
+
+## Gradient Guidance
+
+Use gradients sparingly, mainly in:
+
+- hero background glow
+- button hover sheen
+- subtle card edge light
+- section separators
+
+Recommended gradient feeling:
+
+```css
+background: linear-gradient(135deg, #231942 0%, #5e548e 40%, #9f86c0 75%, #be95c4 100%);
+```
+
+Do **not** use full rainbow-like moving gradients across the whole page.
+
+---
+
+# Typography Direction
+
+Use a clean, elegant typography pairing.
+
+## Recommended feel
+
+- headline: modern serif or refined display serif
+- body: neutral sans-serif
+- small labels: uppercase with generous letter spacing
+
+## Typography hierarchy
+
+- large hero name
+- concise section titles
+- medium subheads
+- highly readable body text
+- restrained line length
+
+The overall impression should be:
+
+**research-led, polished, quiet confidence**
+
+---
+
+# Layout Framework
+
+Use a **single-page scroll website**.
+
+## General Layout Rules
+
+- sticky translucent navbar
+- full-width hero
+- centered content container
+- section spacing should be generous
+- use cards and timeline structures
+- align content to a clean grid
+- avoid visual clutter
+
+## Desktop Layout
+
+- hero: two-column layout
+- content sections: alternating card/grid/timeline structures
+- profile and publications should have strong visual hierarchy
+
+## Mobile Layout
+
+- collapse grids into one column
+- keep animations lighter
+- preserve spacing and typography hierarchy
+- maintain sticky navigation or simplified compact menu
+
+---
+
+# Section-by-Section Content Deployment
+
+# Home
+
+## Purpose
+
+Create a strong first impression and immediately establish academic identity.
+
+## Content
+
+### Main name
+**Menglin Song**
+
+### Main identity
+**PhD Student in Connected Electronic and Photonic Systems**  
+**University of Cambridge & UCL**
+
+### Intro sentence
+> I am a PhD student at the University of Cambridge and UCL, and I obtained my Master’s degree in Integrated Circuit Design from The Hong Kong University of Science and Technology.
+
+### Research summary
+> My research interests include photonic system design, machine learning, and advanced algorithms for optimal design.
+
+### Hero buttons
+- View CV
+- Personal Statement
+- Publications
+
+## Hero Visual Direction
+
+Use one of the following on the right side:
+
+- refined academic portrait
+- abstract photonics-inspired line graphic
+- glowing network mesh
+- soft animated particle field
+- gradient halo with thin geometric overlays
+
+## Hero Interaction
+
+Include:
+
+- fade-in text on load
+- subtle parallax movement
+- glowing button hover
+- animated scroll indicator
+- slight cursor-reactive light effect
+
+---
+
+# Profile
+
+This section should combine **About**, **Education**, and **Selected Honors**.
+
+## Part A: About
+
+### Recommended copy
+> I am currently pursuing doctoral research in connected electronic and photonic systems at the University of Cambridge and UCL. My academic background spans integrated circuit design, photonic systems, and algorithmic methods for high-performance engineering optimisation.
+
+> My work is particularly interested in combining physical system design with data-driven methods, including machine learning approaches for modelling, optimisation, and intelligent design workflows.
+
+## Part B: Education Timeline
+
+### Entry 1
+**2024.09 - 2028.06**  
+**University of Cambridge & UCL**  
+MRes + PhD in Connected Electronic and Photonic Systems
+
+### Entry 2
+**2023.09 - 2024.06**  
+**The Hong Kong University of Science and Technology**  
+Master of Science in IC Design Engineering
+
+### Entry 3
+**2018.09 - 2022.06**  
+**Southwest Jiaotong University**  
+Bachelor of Engineering in Electronic Science and Technology
+
+## Part C: Selected Honors
+
+Use compact highlight cards for:
+
+- Entrance Scholarship in HKUST (below 10% in the major)
+- Best Graduation Thesis (only one in the major; top 2% in the bachelor’s school)
+- Third Prize in the Integrated Circuit EDA Elite Challenge at national level
+
+## Interaction for Profile Section
+
+- timeline reveal on scroll
+- achievement cards with hover lift
+- academic stats or badges with soft glow
+- optional animated count-up for key milestones
+
+---
+
+# Research
+
+## Purpose
+
+Show the user’s main academic directions in a structured and interactive way.
+
+## Recommended Layout
+
+Use **3 interactive research cards**.
+
+## Card 1
+### Photonic System Design
+Focus on system-level thinking, modelling, and design strategies for advanced photonic and electronic systems.
+
+## Card 2
+### Machine Learning
+Explore machine learning methods for modelling, optimisation, and intelligent system analysis.
+
+## Card 3
+### Advanced Algorithms for Optimal Design
+Develop computational methods and algorithmic frameworks for precise, efficient, and scalable design optimisation.
+
+## Interaction Suggestions
+
+- hover lift
+- border glow
+- click-to-expand detail panel
+- background micro-animation on hover
+- smooth opacity and transform transitions
+
+---
+
+# Publications
+
+## Purpose
+
+Present scholarly output clearly and professionally.
+
+## Layout Strategy
+
+Use a layered structure:
+
+1. selected publications cards
+2. patent card
+3. document access block
+
+## Publication 1
+**High-precision Mathematical Modelling of Passive Intermodulation in Connectors**  
+M. Song, Q. Jin  
+*Electronics Letters*, 2022
+
+## Publication 2
+**A Novel Passive Intermodulation Model of Coaxial Cable Assemblies with Distributed and Point-source Nonlinearities**  
+R. Liu, Q. Jin, M. Song, et al.  
+Accepted / published journal information to be inserted in final coded version according to the most accurate source text.
+
+## Patent
+**Title:** A fitting method for a passive intermodulation (PIM) mathematical model  
+**Patent Number:** 023108822605
+
+## Documents
+- Curriculum Vitae
+- Personal Statement
+
+## Interaction Suggestions
+
+- cards expand for abstract / details
+- publication tags such as Journal / SCI / Patent / Accepted
+- “View PDF” and “External Link” button style
+- optional filter tabs: All / Journal / Patent
+
+---
+
+# News
+
+## Purpose
+
+Build an academic growth narrative through a clean timeline.
+
+## Recommended Content
+
+### 2024.07
+Sharing experiences as an outstanding graduate of HKUST in ICDE
+
+### 2024.04
+Received offer of the PhD programme in Connected Electronic and Photonic Systems from the University of Cambridge and UCL
+
+### 2024.02
+“A Novel Passive Intermodulation Model of Coaxial Cable Assemblies with Distributed and Point-source Nonlinearities” accepted
+
+### 2023.12
+Won third prize in the Integrated Circuit EDA Elite Challenge at the national level
+
+### 2023.10
+Obtained the Entrance Scholarship Prize from the School of Engineering in HKUST
+
+### 2023.09
+Started MSc study at HKUST
+
+### 2023.08
+Successfully submitted the thesis entitled “A Novel Passive Intermodulation Model of Coaxial Cable Assemblies with Distributed and Point-source Nonlinearities”
+
+### 2023.07
+Participated in the Advanced Integrated Circuit EDA Summer Conference conducted by Beijing University
+
+## News Interaction
+
+- vertical animated timeline
+- scroll-triggered reveal
+- optional year filter
+- expandable timeline nodes for extra detail
+
+---
+
+# Experience
+
+This section should combine **Professional Experience** and **Invited Talks**.
+
+## Part A: Professional Experience
+
+### Texas Instruments
+**Analog Chip Product Engineer**  
+**2022.07 - 2023.05**  
+Chengdu, China / Dallas, USA / Kuala Lumpur, Malaysia
+
+Optional supporting lines:
+- worked across analog chip product engineering workflows
+- gained cross-regional industrial experience
+- connected research knowledge with engineering practice
+
+## Part B: Invited Talks
+
+### 2021.06
+Invited talk entry placeholder
+
+### 2021.03
+Invited talk entry placeholder | Video
+
+## Design Note
+
+If talk information remains limited, keep this part visually lighter than the professional experience block.
+
+## Interaction Suggestions
+
+- map-like location tags
+- hover detail reveal
+- line connector from industry to academia
+- small media button for talk video
+
+---
+
+# Contact
+
+## Content
+
+Include:
+
+- email
+- Google Scholar
+- GitHub
+- LinkedIn
+- CV download
+- Personal Statement download
+
+## Suggested Closing Sentence
+
+> Open to academic collaboration, interdisciplinary research exchange, and opportunities related to photonic systems, machine learning, and optimal design.
+
+## Footer Style
+
+Keep the footer minimal, elegant, and consistent with the dark background.
+
+---
+
+# Interaction Requirements for Vibe Coding
+
+These interactions are important, but should remain refined.
+
+## Must-have interactions
+
+- sticky glassmorphism navbar
+- active nav highlighting on scroll
+- reveal-on-scroll section animation
+- research card hover effects
+- publication card expansion
+- timeline node animation
+- elegant button hover glow
+- smooth scrolling between sections
+
+## Nice-to-have interactions
+
+- subtle particle / mesh animation in hero
+- cursor-follow ambient light
+- animated gradient halo behind main heading
+- theme-consistent loading transition
+- parallax depth on background layers
+
+## Avoid
+
+- loud transitions
+- bouncing effects
+- excessive floating objects
+- cartoon-style animation
+- overuse of shadows
+- too many simultaneous animated elements
+
+---
+
+# UX Rules
+
+## The site should feel
+
+- scholarly
+- composed
+- premium
+- immersive
+- easy to scan
+
+## The site should not feel
+
+- corporate template-like
+- startup-marketing heavy
+- overly playful
+- cluttered
+- CV dump-like
+
+---
+
+# Suggested Technical Build Direction
+
+Use:
+
+- HTML for structure
+- CSS for layout, gradients, typography, transitions
+- JavaScript for:
+  - scroll-based section activation
+  - timeline reveal
+  - card expansion
+  - navbar state updates
+  - subtle cursor effects
+
+Optional enhancements:
+- GSAP for refined scroll animation
+- Lenis or similar for smooth scrolling
+- lightweight particles or canvas background effects
+
+But keep the implementation clean and maintainable for GitHub Pages.
+
+---
+
+# Content Refinement Notes
+
+Before coding, the following editorial adjustments are recommended:
+
+## Preferred wording
+
+Instead of:
+> I am a PhD program student in the University of Cambridge and UCL
+
+Use:
+> I am a PhD student at the University of Cambridge and UCL.
+
+Instead of:
+> I obtained Master’s degree in Integrated Circuit Design at The Hong Kong University of Science and Technology.
+
+Use:
+> I obtained my Master’s degree in Integrated Circuit Design from The Hong Kong University of Science and Technology.
+
+## Publication consistency
+
+Standardise all publication entries as:
+
+- Title
+- Authors
+- Venue
+- Year
+- optional status / link
+
+## Timeline consistency
+
+Use:
+**YYYY.MM — Event**
+
+---
+
+# Recommended Final Section Order
+
+1. Home
+2. Profile
+3. Research
+4. Publications
+5. News
+6. Experience
+7. Contact
+
+This order is more elegant than separating too many academic subsections.
+
+---
+
+# Prompt Template for Vibe Coding
+
+Use the following prompt logic when asking an AI coding tool to generate the site.
+
+## Master Prompt
+
+Build a single-page academic personal website using HTML, CSS, and JavaScript. The style should be premium, minimal, research-oriented, and interactive, suitable for a PhD researcher at the University of Cambridge and UCL. Use a dark, elegant visual system based on the following palette: `#231942`, `#5e548e`, `#9f86c0`, `#be95c4`. The navigation should be concise: Home, Profile, Research, Publications, News, Experience, Contact. Combine About Me, Education, and Honors into one Profile section. Combine Professional Experience and Invited Talks into one Experience section. Use refined animations such as scroll reveal, glowing hover states, a timeline for News, interactive research cards, expandable publication cards, and a subtle animated hero background. Avoid clutter, excessive visual noise, and startup-style design. The result should feel like a high-end academic research homepage suitable for GitHub Pages.
+
+---
+
+# Deliverables the coded website should include
+
+- `index.html`
+- `style.css`
+- `script.js`
+- optional `assets/` folder for images and files
+- downloadable PDF links for CV and Personal Statement
+
+---
+
+# Final Design Summary
+
+This website should present the researcher as:
+
+- academically strong
+- visually refined
+- internationally trained
+- technically sophisticated
+- focused on photonic systems, machine learning, and optimal design
+
+The final effect should be a **high-end academic digital identity**, with strong interaction and clear structure, while keeping the navigation and information architecture elegant and concise.
