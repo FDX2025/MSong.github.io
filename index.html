@@ -21,7 +21,7 @@
         <li><a href="#home" class="nav-link">Profile</a></li>
         <li><a href="#research" class="nav-link">Research</a></li>
         <li><a href="#publications" class="nav-link">Publications</a></li>
-        <li><a href="#news" class="nav-link">News</a></li>
+        <li style="display:none"><a href="#news" class="nav-link">News</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
       </ul>
     </div>
@@ -90,8 +90,8 @@
     </div>
   </section>
 
-  <!-- NEWS -->
-  <section id="news" class="section s-light">
+  <!-- NEWS (hidden — remove style="display:none" to show) -->
+  <section id="news" class="section s-light" style="display:none">
     <div class="container">
       <div class="section-header reveal">
         <span class="section-label">Milestones</span>
@@ -111,8 +111,11 @@
       </div>
       <h3 class="subsection-title reveal">Professional Experience</h3>
       <div id="expContainer"></div>
-      <h3 class="subsection-title reveal">Invited Talks</h3>
-      <div class="talks-list" id="talksContainer"></div>
+      <!-- Invited Talks (hidden — remove style="display:none" to show) -->
+      <div style="display:none">
+        <h3 class="subsection-title reveal">Invited Talks</h3>
+        <div class="talks-list" id="talksContainer"></div>
+      </div>
     </div>
   </section>
 
